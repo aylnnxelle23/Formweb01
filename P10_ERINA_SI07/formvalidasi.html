@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi - Tugas Praktikum</title>
+    <script src="formvalidasi.js"></script>
+
+<style>
+body {
+  background-image: url(BG.jpg);
+  font-family: sans-serif;
+
+}
+ 
+h1 {
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+}
+ 
+.login {
+  padding: 1em;
+  margin: 2em auto;
+  width: 17em;
+  background: #fff;
+  border-radius: 3px;
+}
+ 
+label {
+  font-size: 10pt;
+  color: black;
+}
+ 
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  width: 95%;
+  background: peachpuff;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+ 
+.container {
+    padding: 8px;
+    width: 95%;
+    background-color: khaki;
+    border: 1px;
+    font-size: 10pt;
+    margin: 6px 0px;
+}
+
+.tombol {
+  background: #3498db;
+  color: #fff;
+  border: 0;
+  padding: 5px 8px;
+}
+
+#jumlah_tiket {
+    font-style: italic;
+    font-size: smaller;
+}
+</style>
+</head>
+<body>
+	<center>
+        <h1>FORM VALIDASI</h1>
+    </center>
+<form onsubmit="validasi()" id="form">
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Pelanggan:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email"  id="email" />
+			</div>
+
+            <div>
+				<label>Jam Keberangkatan:</label>
+				<input type="text" name="jam_keberangkatan" id="jam_keberangkatan" />    
+			</div>
+
+            <div class="container">
+                <p font-style="smaller">Jadwal Keberangkatan:<p>
+                <ul>
+                    <li>01:00 am</li>
+                    <li>05:00 am</li>
+                    <li>08:45 am</li>
+                    <li>11:00 am</li>
+                    <li>14:00 pm</li>
+                    <li>16:30 pm</li>
+                    <li>20:30 pm</li>
+                    <li>23:30 pm</li>
+                </ul>
+            </div>
+
+			<div>
+				<label>Tujuan Keberangkatan:</label>
+				<input type="text" name="tujuan_keberangkatan" id="tujuan_keberangkatan" />
+			</div>
+
+            <div>
+				<label>Jumlah Tiket:</label>
+				<input type="text" name="jmlh_tiket" id="jmlh_tiket" />
+                <small id="jumlah_tiket" class="form-text text-muted">*Anda dapat memesan 1-10 tiket</small>
+			</div>
+
+			<div>
+				<input type="submit" value="Submit" class="tombol">
+			</div>
+		</form>
+	</div>
+</form>
+</body>
+
+</html>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
