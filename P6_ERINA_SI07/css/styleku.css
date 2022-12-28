@@ -1,0 +1,60 @@
+body{
+    background-color: beige;
+}
+
+#header {
+    text-align: center;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+#soekarno {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gambar {
+    text-align: center;
+    border-radius: 20px;
+}
+
+.isi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.Besar{
+    font-size: 50px;
+    color: blue;
+    font-weight: bold;
+    display: inline;
+}
+
+.jawa {
+    font-style: italic;
+    font-weight: bold;
+}
+#profil {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    color: black;
+}
+#beternak {
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.koleksi {
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+.promo {
+    background-color: green;
+    border-radius: 10px;
+    width: auto;
+    margin-left: 30%;
+    margin-right: 32%;
+    color: white;
+}
